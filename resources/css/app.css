@@ -1,5 +1,8 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import './auth-form.css';
+@import './dashboard-content.css';
+@import './search-bar.css';
+@import './left-sidebar.css';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';

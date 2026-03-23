@@ -1,0 +1,87 @@
+/**** NEW DASHBOARD LAYOUT CSS ****/
+
+:root {
+  --white_blue: #c4d1e0;
+  --lavender: #8E7BEF;
+  --dark-purple: #7B6FE5;
+  --light-lavender: #E0DBF9;
+  --cream: #f0e7dd;
+}
+
+body {
+    background-color: var(--white_blue);
+}
+
+/* Main Area */
+.main-container {
+    background-color: var(--white_blue);
+}
+
+/* App Header */
+.app-header {
+    height: 80px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Profile Header */
+.profile-placeholder {
+    width: 40px;
+    height: 40px;
+    background-color: var(--lavender);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.user-name {
+    font-weight: 600;
+}
+
+.current-date {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* Dashboard Content */
+#dashboard-greetings {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #343a40;
+    margin-bottom: 0rem !important;
+}
+
+/* Journal Entry Partial Update */
+.journal-entry-card {
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 1.5rem;
+}
+
+/* Right Side Summary */
+.journal-summary-panel {
+    width: 350px;
+    flex-shrink: 0;
+}
+
+.journal-summary-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.add-entry-btn {
+    background-color: #28a745;
+    border-color: #28a745;
+    font-weight: 600;
+}
+
+.mood-chart {
+    border-radius: 8px;
+}
