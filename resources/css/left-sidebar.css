@@ -1,0 +1,56 @@
+/***** LEFT SIDEBAR COMPONENT CSS *****/
+:root {
+  --lavender: #8E7BEF;
+  --dark-purple: #7B6FE5;
+  --purple: #DA8ee7;
+  --light-purple: #e6cae6;
+  --light-lavender: #E0DBF9;
+  --cream: #f5ede5;
+}
+
+.left-sidebar {
+    width: 250px;
+    background-color: var(--cream);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 30px; /* FIXED: Perfect rounded corners instead of 10% */
+    height: calc(100vh - 40px); /* Makes it almost full height with breathing room */
+    margin: 20px; /* Gives the floating card effect */
+}
+
+.left-sidebar .nav-link {
+    color: #495057;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.left-sidebar #add-entry{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    background-color: var(--purple);
+    font-weight: 500;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.sidebar-title {
+    font-size: 1.5rem;
+    color: #1a2b3c; /* Match the dark blue from the mockup */
+}
+
+.left-sidebar .nav-link:hover,
+.left-sidebar .nav-link.active {
+    background-color: var(--light-lavender);
+    color: #1a2b3c;
+}
+
+.sign-out-container {
+    padding-top: 15px;
+}
+
+.sign-out-container button.nav-link {
+    background-color: transparent;
+}

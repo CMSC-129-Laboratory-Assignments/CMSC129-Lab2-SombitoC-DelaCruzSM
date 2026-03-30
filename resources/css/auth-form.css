@@ -1,0 +1,197 @@
+/***** AUTH FORM CSS *****/
+
+/* FONTS
+*
+* Montserrat
+*/
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* APP COLORS */
+:root {
+    --white_blue: #c4d1e0;
+    --dirty_white: #f2f0ed;
+    --navy-text: #153B50;
+    --cream-card: #ECEBE4;
+    --pink-btn: #FFD3E7;
+    --lavender-btn: #DAB3F3;
+    --dark-purple: #7B6FE5;
+    --teal: #429EA6;
+    --bg-color: #CFDCE3;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, a, button, input, label {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.login-auth-page {
+    background-color: var(--bg-color);
+    min-height: 100vh;
+}
+
+.auth-container {
+    padding: 0;
+    overflow: hidden;
+}
+
+.auth-content-wrapper {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.vh-100 {
+    min-height: 100vh;
+}
+
+.auth-form p {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo-img {
+    height: 60px; /* Adjust size as needed */
+    border-radius: 50px;
+    width: auto;
+    object-fit: contain;
+    /* Optional: add a slight shadow to match the title text */
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.auth-title-header {
+    display: flex;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.auth-form-panel {
+    background-color: var(--dirty_white);
+    border-radius: 24px;
+    padding: 40px 35px; /* Added more breathing room */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05); /* Soft shadow for depth */
+    width: 100%;
+}
+
+.auth-header {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(20px, 4vw, 30px);
+    font-weight: 500;
+    line-height: normal;
+}
+
+.auth-form .form-control {
+    border: none;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 1rem;
+}
+
+.auth-form {
+    width: 100%;
+}
+
+.auth-right {
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.form-control {
+    margin-bottom: 0;
+}
+
+.auth-form .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+.auth-btn {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(--dark-purple, #7B6FE5);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border: none !important;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.auth-btn:hover {
+    background: var(--dark-purple) !important;
+    color: white;
+}
+
+.auth-btn:focus,
+.auth-btn:active,
+.auth-btn:focus-visible,
+.btn-primary.auth-btn:hover,
+.btn-primary.auth-btn:focus,
+.btn-primary.auth-btn:active,
+.btn-primary.auth-btn:active:focus,
+.btn-primary.auth-btn:active:hover,
+.btn-primary.auth-btn:focus-visible {
+    background-color: var(--dark-purple) !important;
+    border-color: var(--dark-purple) !important;
+    color: white !important;
+    box-shadow: 0 0 0 0.25rem var(--dark-purple) !important;
+    cursor: pointer;
+}
+
+.forgot-psd {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.forgot-psd:hover,
+.auth-link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.auth-form .form-control:-webkit-autofill,
+.auth-form .form-control:-webkit-autofill:hover,
+.auth-form .form-control:-webkit-autofill:focus,
+.auth-form .form-control:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.auth-form .form-control:-webkit-autofill:focus {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.6), 0 0 0 30px var(--dirty_white) inset !important;
+}
+
+@media (max-width: 768px) {
+    .auth-content-wrapper {
+        max-width: 100%;
+        padding: 20px 15px;
+    }
+
+    .auth-title-header {
+        font-size: 22px;
+    }
+
+    .header-logo-img {
+        height: 45px;
+    }
+}
