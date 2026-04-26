@@ -28,6 +28,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/journals/create', [JournalController::class, 'create'])->name('journals/create');
     Route::post('/journals', [JournalController::class, 'store'])->name('journals/store');
 
+    
+
     // View, Edit & Delete Entries
     Route::get('/journals/{id}/show', [JournalController::class, 'show'])->name('journals/show'); // NEW ROUTE
     Route::get('/journals/{id}/edit', [JournalController::class, 'edit'])->name('journals/edit');
