@@ -152,7 +152,4 @@
             modal.show();
         }
     </script>
-
-    {{-- AI Chatbot Widget --}}
-    @include('components.chatbot-widget')
 @endsection
